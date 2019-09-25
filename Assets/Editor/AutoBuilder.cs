@@ -20,7 +20,7 @@ namespace JENKINS
         [MenuItem("Custom/CI/Windows Mixed Reality Build (UWP)")]
         public static void JenkinsAutoBuildTest()
         {
-            APP_NAME = string.Format("d{0}_v{1}_{2}", DateTime.Now.ToString("yyyy--MM-dd"), Application.version, GetArg("-appName"));
+            APP_NAME = string.Format("v{0}_{1}({2}).apk", Application.version, GetArg("-appName"), DateTime.Now.ToString("yyyy-MM-dd"));
             //APP_NAME = GetArg("-appName");
             
             TARGET_DIR = GetArg("-buildFolder");//////"D:\\UnityProject\\TestProject\\UnityJenkinsTest\\Build";
